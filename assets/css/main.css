@@ -115,14 +115,14 @@ header .container .menu-btn button:hover i{
 header .container .menu-btn ul {
     position: absolute;
     top: 45px;
-    background-color: #00788a;
+    background-color: #28c1c1;
     width: 220px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     border-radius: 4px;
-    border: 3px solid #74dcdf;
+    border: 3px solid #4cb9c1;
     gap: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
@@ -196,10 +196,20 @@ header .container nav::after {
 
 header .container .icons {
     display: flex;
-    gap: 36px;
+    gap: 15px;
 }
 
-header .container .icons img {
+header .container .icons i {
+    font-size: 29px;
+    color: #60cbd1;
+    transition: all 200ms ease;
+}
+
+header .container .icons i:hover{
+    color: #00788a;
+}
+
+header .container .icons i {
     cursor: pointer;
 }
 
@@ -478,7 +488,7 @@ header .container .icons img {
     margin-top: 25px;
     border-radius: 40px;
     background: linear-gradient(124deg, rgb(255 255 255 / 25%) 0%, rgb(253 253 253 / 0%) 100%);
-    border: 2px solid #FFFFFF;
+    border: 2px solid #ffffff90;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -509,10 +519,10 @@ header .container .icons img {
     Line-height: 18px;
 }
 
-@media (max-width: 1390px) {
+@media (max-width: 1399px) {
     .section-2 .container .left-column img {
-        width: 515px;
-        height: 580px;
+        width: 510px;
+        height: 575px;
     }
 }
 @media (max-width: 995px) {
@@ -526,7 +536,7 @@ header .container .icons img {
         justify-content: center;
     }
     .section-2 .container .right-column {
-        padding-left: 35px;
+        padding-left: 20px;
     }
     .section-2 .container .right-column h1 {
         font-size: 36px;
@@ -552,7 +562,7 @@ header .container .icons img {
     .section-2 .container .right-column {
         justify-content: center;
         align-items: center;
-        padding-left: 20px;
+        padding-left: 10px;
         overflow: hidden;
     }
 }
@@ -560,5 +570,315 @@ header .container .icons img {
 /* ===========End Section Two=========== */
 
 /* ===========Start Section Three=========== */
+.section-3 {
+    background: url(../img/section-3-background.png);
+    padding-bottom: 100px;
+}
 
+.section-3 .container {
+    display: grid;
+    grid-template-columns: auto;
+    padding-top: 80px;
+}
+
+.section-3 .container .head-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.section-3 .container .head-line h6 {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--poppins-font);
+    color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.section-3 .container .head-line h6::after {
+    content: "";
+    background-color: var(--second-color);
+    width: 28px;
+    height: 2px;
+    margin-top: 2px;
+    transition: all 200ms linear;
+}
+
+.section-3 .container .head-line h6:hover::after {
+    width: 38px;
+}
+
+.section-3 .container .head-line h2 {
+    max-width: 532px;
+    color: var(--fourth-color);
+    font-family: var(--Josefin-font);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.section-3 .container .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(388px,1fr));
+    justify-items: center;
+    row-gap: 82px;
+    column-gap: 2px;
+    padding-top: 95px;
+}
+
+.section-3 .container .card-container .card {
+    width: 100%;
+    min-width: 388px;
+    height: 336px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    border-radius: 6px;
+}
+
+.section-3 .container .card-container .card img {
+    width: 72px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.section-3 .container .card-container .card img:hover {
+    transform: scale(0.94);
+}
+
+.section-3 .container .card-container .card:nth-child(2) {
+    box-shadow: 0px 60px 80px -14px rgba(0, 0, 0, 0.08);
+}
+
+.section-3 .container .card-container .card .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 27px;
+    text-align: center;
+}
+
+.section-3 .container .card-container .card .info h3 {
+    color: var(--third-color);
+    font-family: var(--Josefin-font);
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 2%;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.section-3 .container .card-container .card .info h3:hover {
+    color: #61bbbb;
+}
+
+.section-3 .container .card-container .card .info p {
+    color: var(--third-color);
+    font-family: var(--poppins-font);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 28px;
+    max-width: 305px;
+
+}
+
+.section-3 .container .view-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 78px;
+    padding-bottom: 51px;
+}
+
+.section-3 .container .view-btn a {
+    font-family: var(--poppins-font);
+    font-size: 16px;
+    font-weight: 600;
+    color: #083038;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    gap: 7px;
+}
+
+.section-3 .container .view-btn a .arrow-icon {
+    font-weight: 700;
+}
+
+.section-3 .container .view-btn a::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 72px;
+    background-color: var(--li-hover);
+    z-index: -2;
+    right: 42px;
+    bottom: -25px;
+    border-radius: 6px;
+    transition: all 300ms ease;
+}
+
+.section-3 .container .view-btn a:hover::after {
+    width: 100px;
+    right: -5px;
+}
+
+@media (max-width: 1399px) {
+    .section-3 .container .card-container .card:nth-child(2) {
+        box-shadow:none !important;
+    }
+}
+@media (max-width: 415px) {
+    .section-3 {
+        overflow: hidden;
+    }
+}
 /* ===========End Section Three=========== */
+
+/* ===========Start Section Four=========== */
+.section-4 {
+    background-image: url(../img/section-4-background.png);
+
+}
+
+.section-4 .container {
+    padding-top: 15px;
+    padding-bottom: 145px;
+    display: flex;
+    gap: 113px;
+}
+
+.section-4 .container .left-column img{
+    width: 609px;
+    pointer-events: none;
+}
+
+.section-4 .container .right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-4 .container .right-column h6 {
+    font-family: var(--poppins-font);
+    color: var(--second-color);
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+
+.section-4 .container .right-column h6::after {
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 2px;
+    background-color: var(--second-color);
+    top: 16px;
+    left: 0;
+}
+
+.section-4 .container .right-column h1 {
+    font-family: var(--Josefin-font);
+    color: var(--fourth-color);
+    letter-spacing: 0.01em;
+    line-height: 60px;
+    font-size: 44px;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.section-4 .container .right-column h5 {
+    max-width: 550px;
+    font-family: var(--poppins-font);
+    color: #083038;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 34px;
+
+}
+
+.section-4 .container .right-column p {
+    max-width: 540px;
+    font-family: var(--poppins-font);
+    font-size: 20px;
+    color: #083038;
+    line-height: 34px;
+    padding-top: 20px;
+}
+
+.section-4 .container .right-column .play {
+    display: flex;
+    padding-top: 54px;
+    gap: 16px;
+    align-items: end;
+}
+
+.section-4 .container .right-column .play .play-icon {
+    width: 48px;
+    height: 48px;
+    background-color: var(--second-color);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.section-4 .container .right-column .play .play-icon i {
+    font-size: 22px;
+    color: white;
+}
+
+.section-4 .container .right-column .play p {
+    font-family: var(--poppins-font);
+    color: var(--fourth-color);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    max-width: 140px;
+}
+
+@media (max-width: 1200px) {
+    .section-4 .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+}
+/* ===========End Section Four=========== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===========Start Section Five=========== */
+
+/* ===========End Section Five=========== */
