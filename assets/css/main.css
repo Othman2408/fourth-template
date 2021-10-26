@@ -264,7 +264,7 @@ header .container .icons i {
 }
 @media (max-width: 200px) {
     header .container .menu-btn ul {
-        right: 0;
+        right: 2px;
         width: 130px;
 
     }
